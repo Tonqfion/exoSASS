@@ -96,6 +96,13 @@ article.card .card-img {
   object-fit: cover;
   object-position: center;
 }
+article.card .card-content {
+  padding: 15px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 article.card .card-title {
   text-align: center;
   font-weight: bold;
@@ -103,16 +110,11 @@ article.card .card-title {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-article.card .card-content {
-  padding: 15px;
-  margin: 30px;
-}
 article.card .card-content .card-link {
   margin: 15px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   border: 2px solid black;
   background-color: red;
   color: orange;
@@ -138,6 +140,13 @@ article.bigCard .card-img {
   object-fit: cover;
   object-position: center;
 }
+article.bigCard .card-content {
+  padding: 15px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 article.bigCard .card-title {
   text-align: center;
   font-weight: bold;
@@ -145,16 +154,11 @@ article.bigCard .card-title {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-article.bigCard .card-content {
-  padding: 15px;
-  margin: 30px;
-}
 article.bigCard .card-content .card-link {
   margin: 15px;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   border: 2px solid black;
   background-color: red;
   color: orange;

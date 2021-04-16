@@ -29,6 +29,13 @@
   .card-img {
     @include img--cover--center;
   }
+  .card-content {
+    padding: $box__padding;
+    margin: $box__margin;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
 
   .card-title {
     text-align: center;
@@ -37,16 +44,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .card-content {
-    padding: $box__padding;
-    margin: $box__margin;
-  }
   .card-content .card-link {
     margin: 15px;
     padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
     border: 2px solid black;
     @include btn--config;
     &:hover {
