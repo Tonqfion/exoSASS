@@ -1,0 +1,41 @@
+// Version sans mixin
+
+
+article.card {
+    @include box-config;
+    margin: $box__margin;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 9px 6px 15px 4px rgba(0,0,0,0.68)
+    ;
+    img {
+        @include img--cover--center;
+    }
+
+    h2.card-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin-top:10px;
+        margin-bottom: 10px;
+    } .card-content {
+        padding: $box__padding;
+        margin: $box__margin;
+
+    }
+    .card-content a.card-link {
+        margin: 15px;
+        padding: 15px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border:2px solid black;    
+        &:hover {
+            background-color: black;
+            color:white;
+        }   
+    }
+
+}
