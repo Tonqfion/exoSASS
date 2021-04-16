@@ -13,8 +13,7 @@
     min-width: 100%;
     height: 150px;
     object-fit: cover;
-    margin-left: -$box__padding;
-    margin-right: -$box__padding;
+    object-position: center;
   }
 
 @mixin box--config($bx-wdth: $box__width, $bx-hgt: $box__height) {
@@ -23,15 +22,15 @@
   margin: $box__margin;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 9px 6px 15px 4px rgba(0, 0, 0, 0.68);
 
-  img {
+  .card-img {
     @include img--cover--center;
   }
 
-  h2.card-title {
+  .card-title {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
@@ -42,7 +41,7 @@
     padding: $box__padding;
     margin: $box__margin;
   }
-  .card-content a.card-link {
+  .card-content .card-link {
     margin: 15px;
     padding: 15px;
     display: flex;

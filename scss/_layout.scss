@@ -1,5 +1,13 @@
 // Version sans mixin
 
+section.cards-container {
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 article.card {
     @include box--config;
@@ -7,9 +15,9 @@ article.card {
 }
 
 article.bigCard {
-    @include box--config(500px, 600px);
+    @include box--config(500px, 400px);
     .card-content {
-        a.card-link {
+        .card-link {
             @include btn--config(blue,white);
             &:hover {
                 @include btn--hover--config(grey,purple);
