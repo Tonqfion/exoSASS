@@ -2,10 +2,18 @@
 
 
 article.card {
-    @include box-config;
+    @include box--config;
 
 }
 
 article.bigCard {
-    @include box-config(500px, 600px);
+    @include box--config(500px, 600px);
+    .card-content {
+        a.card-link {
+            @include btn--config(blue,white);
+            &:hover {
+                @include btn--hover--config(grey,purple);
+            }
+        }
+    }
 }

@@ -1,3 +1,12 @@
+@mixin btn--config($btn-bg-color:$btn__bg__color, $btn-ft-color:$btn__ft__color) {
+    background-color: $btn-bg-color;
+    color:$btn-ft-color;
+}
+
+@mixin btn--hover--config($btn-bg-hover-color:$btn__hover__bg__color, $btn-ft-hover-color:$btn__hover__ft__color) {
+    background-color: $btn-bg-hover-color;
+    color:$btn-ft-hover-color;
+}
 
 
 @mixin img--cover--center {
@@ -8,7 +17,7 @@
     margin-right: -$box__padding;
   }
 
-@mixin box-config($bx-wdth: $box__width, $bx-hgt: $box__height) {
+@mixin box--config($bx-wdth: $box__width, $bx-hgt: $box__height) {
   max-width: $bx-wdth;
   min-height: $bx-hgt;
   margin: $box__margin;
@@ -40,9 +49,9 @@
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    @include btn--config;
     &:hover {
-      background-color: black;
-      color: white;
+      @include btn--hover--config;
     }
   }
 }

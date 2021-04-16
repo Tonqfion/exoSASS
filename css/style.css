@@ -107,6 +107,8 @@ article.card .card-content a.card-link {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
+  background-color: red;
+  color: orange;
 }
 article.card .card-content a.card-link:hover {
   background-color: black;
@@ -148,10 +150,20 @@ article.bigCard .card-content a.card-link {
   justify-content: center;
   align-items: center;
   border: 2px solid black;
+  background-color: red;
+  color: orange;
 }
 article.bigCard .card-content a.card-link:hover {
   background-color: black;
   color: white;
+}
+article.bigCard .card-content a.card-link {
+  background-color: blue;
+  color: white;
+}
+article.bigCard .card-content a.card-link:hover {
+  background-color: grey;
+  color: purple;
 }
 
 /*# sourceMappingURL=style.css.map */
